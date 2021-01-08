@@ -11,6 +11,9 @@ shell.run("rm position.get.lua")
 shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/position.lua position.lua")
 shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/position.get.lua position.get.lua")
 
+--cd to home
+shell.run("cd ..")
+
 --clears shell output
 shell.run("clear")
 
