@@ -2,6 +2,7 @@
 shell.execute("set","motd.enable","false")
 shell.execute("label","set","_Phone")
 shell.execute("clear")
+shell.execute("gps","locate")
 print("Name: "..os.getComputerLabel())
 print("ID: "..os.getComputerID())
 print("--------------------------")
