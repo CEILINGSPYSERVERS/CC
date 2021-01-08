@@ -5,4 +5,3 @@ shell.execute("clear")
 print("Name: "..os.getComputerLabel())
 print("ID: "..os.getComputerID())
 print("--------------------------")
-
