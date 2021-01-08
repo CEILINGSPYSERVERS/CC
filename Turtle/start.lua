@@ -1,15 +1,23 @@
 --started by startup.lua
 
 --sets turtles name, needs to be edited manually
-shell.run("label set _Turtle")
+shell.run("label set Turtle_"..os.getComputerID())
 
---removes files for refresh
-shell.run("rm position.lua")
-shell.run("rm positionget.lua")
+--checks if files exist, removes them, and downloads them
+if fs.exists("ulib/position.lua")
+    then fs.delete("ulib/position.lua")
+        shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/position.lua ulib/position.lua")
+    else
+        shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/position.lua ulib/position.lua")
+    end
 
---refreshes files
-shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/position.lua position.lua")
-shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/positionget.lua positionget.lua")
+
+if fs.exists("ulib/positionget.lua")
+    then fs.delete("ulib/positionget.lua")
+        shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/positionget.lua ulib/positionget.lua")
+    else
+        shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/positionget.lua ulib/positionget.lua")
+    end
 
 --cd to home
 shell.run("cd ..")
