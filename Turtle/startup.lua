@@ -13,8 +13,5 @@ shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turt
 --run start.lua
 require("start")
 
---make new shell
-shell.run("fg")
-
---exit startup shell
-shell.run(exit)
+--clear shell
+shell.run("clear")
