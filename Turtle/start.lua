@@ -27,7 +27,6 @@ shell.run("clear")
 
 --print out computer information
 print("Name: "..os.getComputerLabel())
-print("ID: "..os.getComputerID())
 print("Fuel: "..turtle.getFuelLevel())
 shell.run("ulib/positionget.lua")
 print("---------------------------------------")
