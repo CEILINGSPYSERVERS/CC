@@ -4,5 +4,5 @@ shell.execute("label","set","_Phone")
 shell.execute("clear")
 print("Name: "..os.getComputerLabel())
 print("ID: "..os.getComputerID())
-print("---------------------------------------------------")
-shell.execute("bg")
+print("--------------------------")
+
