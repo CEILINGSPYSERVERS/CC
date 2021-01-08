@@ -17,4 +17,4 @@ require("start")
 shell.run("fg")
 
 --exit startup shell
---shell.run("exit")
+shell.run(exit)
