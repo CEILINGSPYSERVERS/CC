@@ -6,6 +6,12 @@
 --sets motd.enable to false
 shell.run("set motd.enable false")
 
+--make user library directory for all my files
+shell.run("mkdir ulib")
+
+--cd to ulib dir
+shell.run("cd ulib")
+
 --refresh start.lua
 shell.run("rm start.lua")
 shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/start.lua start.lua")
