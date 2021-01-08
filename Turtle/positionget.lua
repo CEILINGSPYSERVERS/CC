@@ -1,3 +1,3 @@
 --prints current position of computer
-require("ulib/position")
+require("position")
 print("X: ", x, "Y: ", y, "Z:", z)
