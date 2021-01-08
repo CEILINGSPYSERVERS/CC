@@ -5,7 +5,7 @@ shell.run("label set _Turtle")
 
 --removes files for refresh
 shell.run("rm position.lua")
-shell.run("rm position.get.lua")
+shell.run("rm positionget.lua")
 
 --refreshes files
 shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/position.lua position.lua")
