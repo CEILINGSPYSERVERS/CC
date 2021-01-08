@@ -17,4 +17,4 @@ shell.run("rm start.lua")
 shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/start.lua start.lua")
 
 --run start.lua
-require("start")
+require("ulib/start")
