@@ -1,6 +1,6 @@
 --started by startup.lua
 
---sets computers name
+--sets turtles name, needs to be edited manually
 shell.run("label set Turtle_"..os.getComputerID())
 
 --checks if files exist, removes them, and downloads them
