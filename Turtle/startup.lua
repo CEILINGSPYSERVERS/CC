@@ -12,6 +12,3 @@ shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turt
 
 --run start.lua
 require("start")
-
---clear shell
-shell.run("clear")
