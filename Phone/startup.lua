@@ -1,4 +1,4 @@
---wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/GPS/startup.lua startup.lua
+--wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Phone/startup.lua startup.lua
 shell.execute("set","motd.enable","false")
 shell.execute("label","set","_Phone")
 shell.execute("clear")
