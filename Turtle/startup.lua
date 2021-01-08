@@ -1,9 +1,20 @@
+--command to download initial startup.lua file
 --wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/startup.lua startup.lua
-shell.execute("set","motd.enable","false")
-shell.execute("rm","start.lua")
-shell.execute("rm","position.lua")
-shell.execute("rm","position.get.lua")
-shell.execute()
+
+--started by computer at boot
+
+--sets motd.enable to false
+shell.run("set motd.enable false")
+
+--refresh start.lua
+shell.run("rm start.lua")
+shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/start.lua start.lua")
+
+--run start.lua
 require("start")
-shell.execute("fg")
-shell.execute("exit")
+
+--make new shell
+shell.run("fg")
+
+--exit startup shell
+shell.run("exit")
