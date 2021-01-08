@@ -8,4 +8,6 @@ shell.execute("wget","https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/mai
 shell.execute("clear")
 print("Name: "..os.getComputerLabel())
 print("ID: "..os.getComputerID())
+print("Fuel: "..turtle.getFuelLevel())
+require("position.get")
 print("---------------------------------------")
