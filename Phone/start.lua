@@ -27,4 +27,4 @@ shell.run("clear")
 --print out computer information
 print("Name: "..os.getComputerLabel())
 shell.run("ulib/positionget.lua")
-print("---------------------------------------")
+print("--------------------------")
