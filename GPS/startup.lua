@@ -24,4 +24,4 @@ if fs.exists("ulib/start.lua")
 sleep(1)
 
 --run start.lua
-require("ulib/start")
+require("ulib/start.lua")
