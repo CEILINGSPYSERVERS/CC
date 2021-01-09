@@ -4,10 +4,10 @@
 shell.run("label set GPS_"..os.getComputerID())
 
 --checks if files exist, removes them, and downloads them
-if fs.exists("ulib/coordinates.txt")
-    then end
-    else
+if not fs.exists("ulib/coordinates.txt")
+    then
         shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/GPS/coordinates.txt coordinates.txt")
+    else
     end
 
 --cd to home
