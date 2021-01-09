@@ -1,5 +1,5 @@
 --command to download initial startup.lua file
---wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/startup.lua startup.lua
+--wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Phone/startup.lua startup.lua
 
 --started by computer at boot
 
@@ -14,7 +14,7 @@ shell.run("cd ulib")
 
 --refresh start.lua
 shell.run("rm start.lua")
-shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/start.lua start.lua")
+shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Phone/start.lua start.lua")
 
 --run start.lua
 require("ulib/start")

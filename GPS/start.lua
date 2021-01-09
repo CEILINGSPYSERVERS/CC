@@ -7,9 +7,9 @@ shell.run("label set GPS_"..os.getComputerID())
 --[[
 if fs.exists("ulib/position.lua")
     then fs.delete("ulib/position.lua")
-        shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/position.lua position.lua")
+        shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/GPS/position.lua position.lua")
     else
-        shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/position.lua position.lua")
+        shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/GPS/position.lua position.lua")
     end
 --]]
 --cd to home
