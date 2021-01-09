@@ -12,9 +12,13 @@ shell.run("mkdir ulib")
 --cd to ulib dir
 shell.run("cd ulib")
 
---refresh start.lua
-shell.run("rm start.lua")
-shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/start.lua start.lua")
+--checks if files exist, removes them, and downloads them
+if fs.exists("ulib/start.lua")
+    then fs.delete("ulib/start.lua")
+        shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/position.lua start.lua")
+    else
+        shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/position.lua start.lua")
+    end
 
 --run start.lua
 require("ulib/start")
