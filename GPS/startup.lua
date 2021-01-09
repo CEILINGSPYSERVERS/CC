@@ -20,5 +20,8 @@ if fs.exists("ulib/start.lua")
         shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/GPS/start.lua start.lua")
     end
 
+--wait for download
+sleep(1)
+
 --run start.lua
 require("ulib/start")
