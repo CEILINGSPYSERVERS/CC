@@ -1,7 +1,7 @@
 --started by startup.lua
 
 --sets turtles name, needs to be edited manually
-shell.run("label set Turtle_"..os.getComputerID())
+shell.run("label set Phone_"..os.getComputerID())
 
 --checks if files exist, removes them, and downloads them
 if fs.exists("ulib/position.lua")
