@@ -18,7 +18,15 @@ if fs.exists("ulib/positionget.lua")
         shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/positionget.lua positionget.lua")
     end
 
+if fs.exists("ulib/amine.lua")
+    then fs.delete("ulib/amine.lua")
+        shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/amine.lua amine.lua")
+    else
+        shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/amine.lua amine.lua")
+    end
+
 --cd to home
+shell.run("cd ..")
 shell.run("cd ..")
 
 --clears shell output

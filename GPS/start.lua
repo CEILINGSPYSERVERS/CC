@@ -4,9 +4,9 @@
 shell.run("label set GPS_"..os.getComputerID())
 
 --checks if files exist, removes them, and downloads them
-if not fs.exists("ulib/coordinates.txt")
+if not fs.exists("ulib/gpshost.txt")
     then
-        shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/GPS/coordinates.txt coordinates.txt")
+        shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/GPS/gpshost.txt gpshost.txt")
     end
 
 --cd to home
@@ -19,4 +19,4 @@ shell.run("clear")
 print("Name: "..os.getComputerLabel())
 print("---------------------------------------------------")
 shell.run("bg")
-shell.run("gps host "..fs.open("ulib/coordinates.txt"))
+shell.run("gpshost.lua"))
