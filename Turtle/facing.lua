@@ -4,6 +4,8 @@ x1, z1 = x, z
 
 --move and get new position
 turtle.forward(1)
+sleep(1)
+require("position")
 x2, z2 = x, z
 
 --check the difference between the two positions
@@ -30,4 +32,6 @@ end
 
 --reset position
 turtle.back(1)
+sleep(2)
+
 require("position")
