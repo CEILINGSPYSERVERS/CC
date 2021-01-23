@@ -19,7 +19,6 @@ if fs.exists("ulib/start.lua")
     else
         shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/start.lua start.lua")
     end
-end
 
 --run start.lua
 require("ulib/start")

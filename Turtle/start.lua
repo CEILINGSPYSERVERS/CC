@@ -13,7 +13,6 @@ if fs.exists("ulib/position.lua")
     else
         shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/position.lua position.lua")
     end
-end
 
 --clears shell output
 shell.run("clear")
@@ -24,7 +23,6 @@ if fs.exists("ulib/positionget.lua")
     else
         shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/positionget.lua positionget.lua")
     end
-end
 
 --clears shell output
 shell.run("clear")
@@ -35,7 +33,6 @@ if fs.exists("ulib/amine.lua")
     else
         shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/amine.lua amine.lua")
     end
-end
 
 --clears shell output
 shell.run("clear")
@@ -46,7 +43,6 @@ if fs.exists("ulib/facing.lua")
     else
         shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/facing.lua facing.lua")
     end
-end
 
 --clears shell output
 shell.run("clear")
