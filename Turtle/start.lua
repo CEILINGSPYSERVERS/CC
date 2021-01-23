@@ -25,6 +25,13 @@ if fs.exists("ulib/amine.lua")
         shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/amine.lua amine.lua")
     end
 
+if fs.exists("ulib/facing.lua")
+    then fs.delete("ulib/facing.lua")
+        shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/facing.lua facing.lua")
+    else
+        shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/facing.lua facing.lua")
+    end
+
 --cd to home
 shell.run("cd ..")
 shell.run("cd ..")
