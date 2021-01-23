@@ -11,20 +11,22 @@ x3 = x2 - x1
 z3 = z2 - z1
 
 --x face check
-if not x3 = 0
-    then
-        if x3 = 1
-            facing = px
-         else
-            facing = nx
+if x3 ~= 0 then
+    if x3 == 1 then
+        facing = px
+    else
+        facing = nx
+    end
+end
 
 --y face check
-if not z3 = 0
-    then
-        if z3 = 1
-            facing = pz
-        else
-            facing = nz
+if z3 ~= 0 then
+    if z3 == 1 then
+        facing = pz
+    else
+        facing = nz
+    end
+end
 
 --reset position
 turtle.back(1)
