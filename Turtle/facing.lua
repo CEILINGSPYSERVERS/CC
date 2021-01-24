@@ -1,5 +1,6 @@
 --get and set initial position of turtle
 require("position")
+position()
 x1, z1 = x, z
 print(x, z)
 print(x1, z1)
@@ -7,7 +8,7 @@ print(x1, z1)
 --move and get new position
 turtle.forward(1)
 sleep(1)
-require("position")
+position()
 x2, z2 = x, z
 print(x, z)
 print(x2, z2)
@@ -40,5 +41,5 @@ turtle.back(1)
 sleep(2)
 print(facing)
 
-require("position")
+position()
 print(x, z)
