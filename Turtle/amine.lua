@@ -7,23 +7,23 @@ print(facing)
 print(mx, my, mz)
 if mx ~= 0 then
     if mx > 0 then
-        if facing = "+x" then
+        if facing == "+x" then
             turtle.turnRight()
             turtle.turnRight()
         end
-        if facing = "+z" then
+        if facing == "+z" then
             turtle.turnRight()
         end
-        if facing = "-z" then
+        if facing == "-z" then
             turtle.turnLeft()
         end
     if mx < 0 then
-        if facing = "-x" then
+        if facing == "-x" then
             turtle.turnRight()
             turtle.turnRight()
-        if facing = "+z" then
+        if facing == "+z" then
             turtle.turnLeft()
-        if facing = "-z" then
+        if facing == "-z" then
             turtle.turnRight()
         end
     end
