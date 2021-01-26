@@ -1,14 +1,14 @@
 --sets current facing direction
 require("facing")
+require("setface")
 
 --gets user input on secondary cordinates to mine to
-print("X")
+print("X:")
 x2 = io.read()
-print("y")
+print("Y:")
 y2 = io.read()
-print("z")
+print("Z:")
 z2 = io.read()
---x2, y2, z2 = io.read(*n,*n,*n)
 
 --sets displacement from starting position to secondary position
 mx = x2 - x
