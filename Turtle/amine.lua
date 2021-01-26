@@ -2,7 +2,7 @@
 require("facing")
 
 --gets user input on secondary cordinates to mine to
-x2, y2, z2 = io.read("*n","*n","*n")
+x2, y2, z2 = io.read(*n,*n,*n)
 
 --sets displacement from starting position to secondary position
 mx = x2 - x
