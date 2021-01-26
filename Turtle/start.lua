@@ -17,7 +17,6 @@ shell.run("clear")
 
 --runs new background shell to download files
 require("ulib/ulibget")
-shell.run("exit")
 shell.run("bg")
 
 --clear then print out computer information
