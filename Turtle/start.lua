@@ -20,11 +20,8 @@ require("ulib/ulibget")
 shell.run("bg")
 shell.run("exit")
 
---move current directory to home and clears output
-shell.run("cd ..")
+--clear then print out computer information
 shell.run("clear")
-
---print out computer information
 print("Name: "..os.getComputerLabel())
 print("Fuel: "..turtle.getFuelLevel())
 shell.run("ulib/positionget.lua")
