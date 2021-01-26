@@ -8,4 +8,5 @@ function setface(direction)
             turtle.turnRight()
         end
     end
+    facing = direction
 end

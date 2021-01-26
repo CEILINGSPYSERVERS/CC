@@ -18,6 +18,7 @@ shell.run("clear")
 --runs new background shell to download files
 require("ulib/ulibget")
 shell.run("bg")
+shell.run("exit")
 
 --move current directory to home and clears output
 shell.run("cd ..")
