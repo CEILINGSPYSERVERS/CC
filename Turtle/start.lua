@@ -14,6 +14,8 @@ end
 
 --launches ulibget and shell in new window
 multishell.launch({},"ulib/ulibget")
+shell.run("clear")
+sleep(1)
 multishell.launch({},"ulib/shell")
 
 --clear then print out computer information
