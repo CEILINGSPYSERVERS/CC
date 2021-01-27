@@ -1,17 +1,17 @@
 --get and set initial position of turtle
 require("position")
 position()
-x1, z1 = x, z
+local x1, z1 = x, z
 
 --move and get new position
 turtle.forward(1)
 sleep(1)
 position()
-x2, z2 = x, z
+local x2, z2 = x, z
 
 --check the difference between the two positions
-x3 = x2 - x1
-z3 = z2 - z1
+local x3 = x2 - x1
+local z3 = z2 - z1
 
 --x face check
 if x3 ~= 0 then
