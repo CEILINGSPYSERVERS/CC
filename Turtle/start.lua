@@ -13,10 +13,10 @@ else
 end
 
 --launches ulibget and shell in new window
-multishell.launch({},"ulib/ulibget")
+multishell.launch({},"ulib/ulibget.lua")
 shell.run("clear")
 sleep(1)
-multishell.launch({},"ulib/shell")
+multishell.launch({},"ulib/shell.lua")
 
 --clear then print out computer information
 shell.run("clear")
