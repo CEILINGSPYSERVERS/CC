@@ -2,29 +2,25 @@
 
 --sets turtles name, needs to be edited manually
 shell.run("label set Phone_"..os.getComputerID())
+multishell.setTitle(1,os.getComputerLabel())
 
---checks if files exist, removes them, and downloads them
-if fs.exists("ulib/position.lua")
-    then fs.delete("ulib/position.lua")
-        shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Phone/position.lua position.lua")
-    else
-        shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Phone/position.lua position.lua")
-    end
+--gets ulibget file
+if fs.exists("ulib/ulibget.lua") then
+    fs.delete("ulib/ulibget.lua")
+    shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Phone/ulibget.lua ulibget.lua")
+else
+    shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Phone/ulibget.lua ulibget.lua")
+end
 
-if fs.exists("ulib/positionget.lua")
-    then fs.delete("ulib/positionget.lua")
-        shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Phone/positionget.lua positionget.lua")
-    else
-        shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Phone/positionget.lua positionget.lua")
-    end
+--launches ulibget and shell in new window
+multishell.launch({},"ulib/ulibget")
+multishell.launch({},"ulib/shell")
 
 --cd to home
 shell.run("cd ..")
 
---clears shell output
+--clear then print out computer information
 shell.run("clear")
-
---print out computer information
 print("Name: "..os.getComputerLabel())
 shell.run("ulib/positionget.lua")
 print("--------------------------")
