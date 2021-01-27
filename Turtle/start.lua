@@ -2,9 +2,7 @@
 
 --sets computers name
 shell.run("label set Turtle_"..os.getComputerID())
-
---clears shell output
-shell.run("clear")
+multishell.setTitle(1,os.getComputerLabel())
 
 --gets ulibget file
 if fs.exists("ulib/ulibget.lua") then
@@ -13,11 +11,10 @@ if fs.exists("ulib/ulibget.lua") then
 else
     shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/ulibget.lua ulibget.lua")
 end
-shell.run("clear")
 
---runs new background shell to download files
-require("ulib/ulibget")
-shell.run("bg")
+--launches ulibget and shell in new window
+multishell.launch({},"ulib/ulibget")
+multishell.launch({},"ulib/shell")
 
 --clear then print out computer information
 shell.run("clear")

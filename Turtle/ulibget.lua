@@ -34,5 +34,12 @@ else
     shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/setface.lua setface.lua")
 end
 
+if fs.exists("ulib/shell.lua") then
+    fs.delete("ulib/shell.lua")
+    shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/shell.lua shell.lua")
+else
+    shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/shell.lua shell.lua")
+end
+
 --exits the shell this program is running in
 shell.run("exit")
