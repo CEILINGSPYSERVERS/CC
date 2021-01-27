@@ -13,12 +13,12 @@ shell.run("mkdir ulib")
 shell.run("cd ulib")
 
 --checks if files exist, removes them, and downloads them
-if fs.exists("ulib/start.lua")
-    then fs.delete("ulib/start.lua")
-        shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/GPS/start.lua start.lua")
-    else
-        shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/GPS/start.lua start.lua")
-    end
+if fs.exists("ulib/start.lua") then
+    fs.delete("ulib/start.lua")
+    shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/GPS/start.lua start.lua")
+else
+    shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/GPS/start.lua start.lua")
+end
 
 --run start.lua
 require("ulib/start")

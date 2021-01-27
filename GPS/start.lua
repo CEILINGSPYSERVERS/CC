@@ -1,22 +1,26 @@
 --started by startup.lua
 
---sets computers name
+--sets computer and shell name
 shell.run("label set GPS_"..os.getComputerID())
+multishell.setTitle(1,os.getComputerLabel())
 
---checks if files exist, removes them, and downloads them
-if not fs.exists("ulib/gpshost.lua")
-    then
-        shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/GPS/gpshost.lua gpshost.lua")
-    end
+--gets ulibget file
+if fs.exists("ulib/ulibget.lua") then
+    fs.delete("ulib/ulibget.lua")
+    shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/GPS/ulibget.lua ulibget.lua")
+else
+    shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/GPS/ulibget.lua ulibget.lua")
+end
+
+--launches ulibget and shell in new window
+multishell.launch({},"ulib/ulibget")
+multishell.launch({},"ulib/shell")
 
 --cd to home
 shell.run("cd ..")
 
---clears shell output
+--clear then print out computer information
 shell.run("clear")
-
---print out computer information
 print("Name: "..os.getComputerLabel())
 print("---------------------------------------------------")
-shell.run("bg")
 shell.run("ulib/gpshost.lua")

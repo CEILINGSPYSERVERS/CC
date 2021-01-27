@@ -34,5 +34,5 @@ else
     shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/setface.lua setface.lua")
 end
 
---exits the background shell this program is running in
+--exits the shell this program is running in
 shell.run("exit")
