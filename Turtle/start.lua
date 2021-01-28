@@ -12,7 +12,7 @@ else
 end
 
 --launches ulibget and shell in new window
---shell.run("ulibget")
+shell.run("ulibget")
 shell.run("clear")
 sleep(.7)
 
