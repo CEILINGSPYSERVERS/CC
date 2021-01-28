@@ -13,10 +13,9 @@ else
 end
 
 --launches ulibget and shell in new window
-multishell.launch({},"ulib/ulibget")
+shell.openTab("ulib/ulibget")
+shell.openTab("ulib/shell")
 shell.run("clear")
-sleep(1)
-multishell.launch({},"ulib/shell")
 
 --cd to home
 shell.run("cd ..")
