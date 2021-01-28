@@ -14,7 +14,6 @@ end
 --launches ulibget and shell in new window
 shell.run("ulibget")
 shell.run("clear")
-sleep(.1)
 
 --clear then print out computer information
 shell.run("clear")
