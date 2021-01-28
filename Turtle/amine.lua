@@ -1,5 +1,6 @@
 --sets current facing direction
 require("facing")
+facing()
 require("setface")
 setface()
 
