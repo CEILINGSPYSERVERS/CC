@@ -52,6 +52,3 @@ else
 end
 
 shell.run("clear")
-
---exits the shell this program is running in
-shell.run("exit")
