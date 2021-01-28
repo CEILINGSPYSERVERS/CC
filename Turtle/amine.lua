@@ -1,6 +1,7 @@
 --sets current facing direction
 require("facing")
 require("setface")
+setface()
 
 --gets user input on secondary cordinates to mine to
 print("X:")
