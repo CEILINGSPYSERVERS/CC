@@ -1,7 +1,7 @@
 function setface()
     --set turtle facing direction to a desired direction
     require("facing")
-    facing()
+    getfacing()
 
     --function to turn turtle, checks and turns 3 times for simplicity
     function setface(direction)

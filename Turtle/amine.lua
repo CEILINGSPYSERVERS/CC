@@ -3,7 +3,7 @@ shell.run("refuel")
 
 --sets current facing direction
 require("facing")
-facing()
+getface()
 require("setface")
 setface()
 
