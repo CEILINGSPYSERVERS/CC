@@ -1,3 +1,6 @@
+--refuels turtle
+shell.run("refuel")
+
 --sets current facing direction
 require("facing")
 facing()
