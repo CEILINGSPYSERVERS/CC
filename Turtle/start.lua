@@ -2,7 +2,6 @@
 
 --sets computers name
 shell.run("label set Turtle_"..os.getComputerID())
-multishell.setTitle(1,os.getComputerLabel())
 
 --gets ulibget file
 if fs.exists("ulib/ulibget.lua") then
@@ -13,8 +12,9 @@ else
 end
 
 --launches ulibget and shell in new window
-shell.openTab("ulib/ulibget.lua")
+shell.openTab("ulibget")
 shell.run("clear")
+sleep(.7)
 
 --clear then print out computer information
 shell.run("clear")
