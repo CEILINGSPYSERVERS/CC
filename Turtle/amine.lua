@@ -3,7 +3,6 @@ shell.run("refuel")
 
 --sets current facing direction
 require("facing")
-getface()
 require("setface")
 setface()
 
@@ -20,22 +19,25 @@ mx = x2 - x
 my = y2 - y
 mz = z2 - z
 
---calls setface function which turns turtle to correct x direction
-if mx ~= 0 then
-    if mx > 0 then
-        setface("-x")
-    end
-    if mx < 0 then
-        setface("+x")
-    end
-end
 
---calls setface function which turns turtle to correct z direction
-if mz ~= 0 then
-    if mz > 0 then
-        setface("-z")
+
+--calls setface function which turns turtle to correct direction
+if mx > my then
+    if mz ~= 0 then
+        if mz > 0 then
+            setface("-z")
+        end
+        if mz < 0 then
+            setface("+z")
+        end
     end
-    if mz < 0 then
-        setface("+z")
+else
+    if mx ~= 0 then
+        if mx > 0 then
+            setface("-x")
+        end
+        if mx < 0 then
+            setface("+x")
+        end
     end
 end
