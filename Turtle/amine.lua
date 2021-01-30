@@ -19,8 +19,6 @@ mx = x2 - x
 my = y2 - y
 mz = z2 - z
 
-
-
 --calls setface function which turns turtle to correct direction
 if mx > my then
     if mz ~= 0 then
@@ -41,3 +39,5 @@ else
         end
     end
 end
+
+--does mining
