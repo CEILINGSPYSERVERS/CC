@@ -8,7 +8,7 @@ function setface()
         for i = 3, 1, -1 do
             if direction ~= facing then
                 turtle.turnRight()
-                facing()
+                getface()
             end
         end
         facing = direction
