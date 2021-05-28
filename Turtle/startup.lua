@@ -1,5 +1,5 @@
 --command to download initial startup.lua file
---wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/startup.lua startup.lua
+--wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/Turtle/startup.lua startup.lua --no-cache
 
 --started by computer at boot
 
