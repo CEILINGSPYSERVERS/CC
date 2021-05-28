@@ -18,6 +18,9 @@ z2 = io.read()
 mx = x2 - x
 my = y2 - y
 mz = z2 - z
+mxo = mx
+myo = my
+mzo = mz
 
 --checks fuel levels against requested area
 fLevel = turtle.getFuelLevel()
@@ -31,17 +34,23 @@ end
 setface("+x")
 
 --does mining
-for 0,my,1 do
-    for,mz,1 do
-        for 0,mx,1 do
+while my > 1 do
+    while mz > 1 do
+        while mx > 1 do
             turtle.dig(left)
+            mx = mx - 1
         end
+        mx = mxo
         turtle.turnRight()
         turtle.forward()
         turtle.turnRight()
+        mz = mz - 1
     end
+    mz = mz0
     turtle.up()
+    my = my - 1
 end
+my = myo
 
 --[[
 --calls setface function which turns turtle to correct direction
