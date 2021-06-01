@@ -34,9 +34,9 @@ end
 setface("+x")
 
 --does mining
-while my > 1 do
-    while mz > 1 do
-        while mx > 1 do
+while my > 0 do
+    while mz > 0 do
+        while mx > 0 do
             turtle.dig(left)
             mx = mx - 1
         end
