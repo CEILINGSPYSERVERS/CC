@@ -33,6 +33,9 @@ end
 --set turtle to known direction
 setface("+x")
 
+--set variable to which pass the turtle is on for a plane
+passCount = 0
+
 --does mining
 --while my > 1 do
     while mz > 1 do
@@ -42,21 +45,17 @@ setface("+x")
             mx = mx - 1
         end
         mx = mxo
-        turtle.turnRight()
-        turtle.forward()
-        turtle.turnRight()
-        mz = mz - 1
-    end
-    while mz > 1 do
-        while mx > 1 do
-            turtle.dig(left)
+        if passCount == 0 do
+            turtle.turnRight()
             turtle.forward()
-            mx = mx - 1
+            turtle.turnRight()
+            passCount = 1
+        elseif passCount == 1 do
+            turtle.turnLeft()
+            turtle.forward()
+            turtle.turnLeft()
+            passCount = 0
         end
-        mx = mxo
-        turtle.turnLeft()
-        turtle.forward()
-        turtle.turnLeft()
         mz = mz - 1
     end
     mz = mz0
