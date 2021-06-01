@@ -50,15 +50,16 @@ while my ~= 0 do
             turtle.forward()
             turtle.turnRight()
             passCount = 1
+            mz = mz - 1
         elseif passCount == 1 then
             turtle.turnLeft()
             turtle.forward()
             turtle.turnLeft()
             passCount = 0
+            mz = mz - 1
         end
-        mz = mz - 1
+        mz = mz0
     end
-    mz = mz0
     if my > 0 then
         turtle.up()
         my = my - 1
