@@ -67,7 +67,6 @@ while my ~= 0 do
         my = my + 1
     end
 end
-my = myo
 
 --[[
 --calls setface function which turns turtle to correct direction
