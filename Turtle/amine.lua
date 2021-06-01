@@ -33,6 +33,12 @@ end
 --set turtle to known direction
 setface("+x")
 
+while mx > 0 do
+    turtle.dig(left)
+    mx = mx - 1
+end
+
+--[[
 --does mining
 while my > 0 do
     while mz > 0 do
@@ -51,6 +57,7 @@ while my > 0 do
     my = my - 1
 end
 my = myo
+]]
 
 --[[
 --calls setface function which turns turtle to correct direction
