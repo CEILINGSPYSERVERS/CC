@@ -37,9 +37,9 @@ setface("+x")
 passCount = 0
 
 --does mining
---while my > 1 do
-    while mz > 1 do
-        while mx > 1 do
+while my > 0 do
+    while mz > 0 do
+        while mx > 0 do
             turtle.dig(left)
             turtle.forward()
             mx = mx - 1
@@ -59,10 +59,14 @@ passCount = 0
         mz = mz - 1
     end
     mz = mz0
-    turtle.up()
-    --y = my - 1
---end
---my = myo
+    if my > 0 then
+        turtle.up()
+    else
+        turtle.down()
+    end
+    y = my - 1
+end
+my = myo
 
 --[[
 --calls setface function which turns turtle to correct direction
