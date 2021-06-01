@@ -37,7 +37,7 @@ setface("+x")
 passCount = 0
 
 --does mining
-while my > 0 do
+while my ~= 0 do
     while mz > 0 do
         while mx > 0 do
             turtle.dig(left)
@@ -61,10 +61,11 @@ while my > 0 do
     mz = mz0
     if my > 0 then
         turtle.up()
+        my = my - 1
     else
         turtle.down()
+        my = my + 1
     end
-    y = my - 1
 end
 my = myo
 
