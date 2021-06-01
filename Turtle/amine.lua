@@ -34,7 +34,7 @@ end
 setface("+x")
 
 --does mining
-while my > 1 do
+--while my > 1 do
     while mz > 1 do
         while mx > 1 do
             turtle.dig(left)
@@ -47,11 +47,23 @@ while my > 1 do
         turtle.turnRight()
         mz = mz - 1
     end
+    while mz > 1 do
+        while mx > 1 do
+            turtle.dig(left)
+            turtle.forward()
+            mx = mx - 1
+        end
+        mx = mxo
+        turtle.turnLeft()
+        turtle.forward()
+        turtle.turnLeft()
+        mz = mz - 1
+    end
     mz = mz0
     turtle.up()
-    my = my - 1
-end
-my = myo
+    --y = my - 1
+--end
+--my = myo
 
 --[[
 --calls setface function which turns turtle to correct direction
