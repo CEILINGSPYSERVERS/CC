@@ -45,12 +45,12 @@ passCount = 0
             mx = mx - 1
         end
         mx = mxo
-        if passCount == 0 do
+        if passCount == 0 then
             turtle.turnRight()
             turtle.forward()
             turtle.turnRight()
             passCount = 1
-        elseif passCount == 1 do
+        elseif passCount == 1 then
             turtle.turnLeft()
             turtle.forward()
             turtle.turnLeft()
