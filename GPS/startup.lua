@@ -1,5 +1,5 @@
 --command to download initial startup.lua file
---wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/GPS/startup.lua startup.lua --no-cache
+--wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/GPS/startup.lua startup.lua
 
 --started by computer at boot
 
@@ -15,9 +15,9 @@ shell.run("cd ulib")
 --checks if files exist, removes them, and downloads them
 if fs.exists("ulib/start.lua") then
     fs.delete("ulib/start.lua")
-    shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/GPS/start.lua start.lua --no-cache")
+    shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/GPS/start.lua start.lua")
 else
-    shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/GPS/start.lua start.lua --no-cache")
+    shell.run("wget https://raw.githubusercontent.com/CEILINGSPYSERVERS/CC/main/GPS/start.lua start.lua")
 end
 
 --run start.lua
